@@ -3,11 +3,16 @@ service.cb1.ppi - NOTICE / third-party and derived material
 1. Add-on code (*.py, settings, language files, README)
    Written for this project. Licence: GPL-2.0-or-later (see LICENSE).
 
-2. Panel template (template/cb1/*.xml)
-   NOT included in this repository. The add-on is designed to work with the
-   cb1 Player information panel of the CroqueMr/libreelec-x86-DV LibreELEC
-   build (https://github.com/CroqueMr/libreelec-x86-DV). Without template/cb1
-   the add-on generates nothing and changes nothing.
+2. template/cb1/*.xml and the generated media/cb1/*.xml
+   Modified versions (restyled, retranslated, parameterised) of the "cb1"
+   PlayerProcessInfo panel files of the CroqueMr/libreelec-x86-DV LibreELEC
+   build (https://github.com/CroqueMr/libreelec-x86-DV):
+   DialogPlayerProcessInfo.xml, IncludesDVProcessInfo.xml and
+   DialogPlaybackModes.xml.
+   The original authorship remains with the author of that project. The
+   author confirmed on the AVS Forum on 2026-11-15 that the
+   modified copies may be published under GPL-2.0-or-later. The panel reads
+   the DV.* window properties that the fork provides.
 
 3. media/cb1-*.png
    Plain geometric textures (rectangles, rounded shapes, a check mark) drawn

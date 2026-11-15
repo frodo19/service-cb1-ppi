@@ -5,13 +5,9 @@ An editable, customisable copy of the **cb1 PlayerProcessInfo panel** of the
 optional read-mostly web server for a compatible mobile app. English and Hungarian
 (Magyar) user interface.
 
-*Magyar leírás: [README.hu.md](README.hu.md)*
-
 > Not affiliated with or endorsed by the LibreELEC, Kodi, CroqueMr or TinyPPI projects.
 > "TinyPPI Mobile" is named only to say which app the web server is compatible with.
 > Dolby, Dolby Vision and other format names are trademarks of their owners.
-
-> **Note:** the panel template (`template/cb1/`) is not part of this repository yet, so the add-on is a framework only; the panel files will be added once the licence question with the upstream project is settled.
 
 ## What it does
 - `template/cb1/*.xml` is the **editable source** (colours are `@@token@@` placeholders; labels are written in Hungarian and translated to English at build time, see `strings_en.py`).
@@ -135,6 +131,12 @@ switched off (the token is still required for reading). Source: `web.py`, `media
 The add-on queries by ID (IMDb/TMDb) and caches results for 7 days in the profile
 (`addon_data/service.cb1.ppi/mdblist.json`). Ratings from TMDb Helper are still used for the playing title.
 Use of the MDBList API is subject to MDBList's own terms; no key is bundled.
+
+## Credits
+- **CroqueMr** ([libreelec-x86-DV](https://github.com/CroqueMr/libreelec-x86-DV)): the LibreELEC Dolby Vision build, the cb1 Player information panel this add-on customises, and the kind permission to publish modified copies of the panel files under GPL-2.0-or-later (AVS Forum, 2026-11-15).
+- **CE-Repo** ([tinyppi-mobile](https://github.com/CE-Repo/tinyppi-mobile), MIT): the mobile app whose published interface the web server is compatible with.
+- **MDBList**: the optional multi-source ratings service.
+- **Kodi** and **LibreELEC** teams.
 
 ## Licence
 GPL-2.0-or-later, see `LICENSE` and `NOTICE.txt` (third-party and derived material).
