@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.cb1.ppi" name="CB1 PlayerProcessInfo" version="2.0.0" provider-name="CB1 PPI mod">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="startup"/>
+  <extension point="xbmc.python.script" library="regen.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+    <summary lang="hu_HU">A DV PlayerProcessInfo panel testreszabható változata (magyar/angol), mobil app kompatibilis webszerverrel</summary>
+    <description lang="hu_HU">Indításkor a media/ mappa tartalmát ráköti a /usr/share/kodi/media megfelelő elemeire (mount --bind), így a cb1 panel az addon mappájában szerkeszthető. A beállításokban a hátterek színe és átlátszatlansága, a szövegszínek és a nyelv állítható; a panel XML-jei a template/ mappából generálódnak. Opcionális, a TinyPPI Mobile apppal kompatibilis webszerver. Csak LibreELEC-en (Kodi root-ként fut), a CroqueMr Dolby Vision buildhez. Nem áll kapcsolatban a TinyPPI, LibreELEC vagy Kodi projektekkel.</description>
+    <summary lang="en_GB">Editable, customisable DV PlayerProcessInfo panel (English/Hungarian) with a mobile-app compatible web server</summary>
+    <description lang="en_GB">Bind-mounts media/ over /usr/share/kodi/media so the cb1 panel can be edited from the add-on folder. Settings control background colours/opacity, text colours and language; the panel XML is generated from template/. Optional web server compatible with the TinyPPI Mobile app. LibreELEC only (Kodi runs as root), for the CroqueMr Dolby Vision build. Not affiliated with the TinyPPI, LibreELEC or Kodi projects.</description>
+    <license>GPL-2.0-or-later</license>
+    <language>en_GB hu_HU</language>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <news>2.0.0 - English and Hungarian user interface (panel, mobile-app labels, settings, docs); language setting; own-drawn textures, icon and fanart; clean NOTICE/LICENSE for publishing
+1.4.0 - separate text colours for column titles, headers, section titles and values
+1.3.x - mobile app: more rating sources (MDBList key), audio codec labels, resume, library
+1.2.x - mobile-app compatible web server, panel changes
+1.1.0 - settings (backgrounds, opacity, text colours), icon, fanart, template/ to media/ generation
+1.0.0 - first version</news>
+  </extension>
+</addon>

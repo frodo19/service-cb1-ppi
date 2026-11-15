@@ -1,0 +1,294 @@
+# Kodi Media Center language file
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: hu_HU\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#32001"
+msgid "Backgrounds"
+msgstr "Hátterek"
+
+msgctxt "#32002"
+msgid "Text colours"
+msgstr "Szövegszínek"
+
+msgctxt "#32003"
+msgid "Advanced"
+msgstr "Haladó"
+
+msgctxt "#32016"
+msgid "Selected row colour (playback modes)"
+msgstr "Kijelölt sor színe (lejátszási módok)"
+
+msgctxt "#32030"
+msgid " colour"
+msgstr " színe"
+
+msgctxt "#32031"
+msgid " opacity (%)"
+msgstr " átlátszatlansága (%)"
+
+msgctxt "#32040"
+msgid "Custom colour (RRGGBB or AARRGGBB), empty = use list"
+msgstr "Egyéni szín (RRGGBB vagy AARRGGBB), üres = a lista érvényes"
+
+msgctxt "#32041"
+msgid "Reload skin after changing settings"
+msgstr "Skin újratöltése beállítás-változás után"
+
+msgctxt "#32042"
+msgid "Regenerate panel now (after editing template/)"
+msgstr "Panel újragenerálása most (template/ szerkesztése után)"
+
+msgctxt "#32043"
+msgid "Default"
+msgstr "Alapértelmezett"
+
+msgctxt "#32100"
+msgid "White"
+msgstr "Fehér"
+
+msgctxt "#32101"
+msgid "Light grey"
+msgstr "Világosszürke"
+
+msgctxt "#32102"
+msgid "Grey"
+msgstr "Szürke"
+
+msgctxt "#32103"
+msgid "Dark grey"
+msgstr "Sötétszürke"
+
+msgctxt "#32104"
+msgid "Black"
+msgstr "Fekete"
+
+msgctxt "#32105"
+msgid "Dark slate"
+msgstr "Sötét palaszürke"
+
+msgctxt "#32106"
+msgid "Slate"
+msgstr "Palaszürke"
+
+msgctxt "#32107"
+msgid "Slate dark"
+msgstr "Sötét palaszürke 2"
+
+msgctxt "#32108"
+msgid "Graphite"
+msgstr "Grafit"
+
+msgctxt "#32109"
+msgid "Navy"
+msgstr "Sötétkék"
+
+msgctxt "#32110"
+msgid "Dark green"
+msgstr "Sötétzöld"
+
+msgctxt "#32111"
+msgid "Burgundy"
+msgstr "Bordó"
+
+msgctxt "#32112"
+msgid "Dark purple"
+msgstr "Sötétlila"
+
+msgctxt "#32113"
+msgid "Green"
+msgstr "Zöld"
+
+msgctxt "#32114"
+msgid "Amber"
+msgstr "Borostyán"
+
+msgctxt "#32115"
+msgid "Orange"
+msgstr "Narancs"
+
+msgctxt "#32116"
+msgid "Sky blue"
+msgstr "Égkék"
+
+msgctxt "#32117"
+msgid "Cyan"
+msgstr "Cián"
+
+msgctxt "#32118"
+msgid "Red"
+msgstr "Piros"
+
+msgctxt "#32119"
+msgid "Magenta"
+msgstr "Magenta"
+
+msgctxt "#32120"
+msgid "Lilac"
+msgstr "Orgona"
+
+msgctxt "#32201"
+msgid "Main panel colour"
+msgstr "Főpanel színe"
+
+msgctxt "#32202"
+msgid "Main panel opacity (%)"
+msgstr "Főpanel átlátszatlansága (%)"
+
+msgctxt "#32203"
+msgid "Main panel: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Főpanel: egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32204"
+msgid "Bottom (meter) card colour"
+msgstr "Alsó (mérő) kártya színe"
+
+msgctxt "#32205"
+msgid "Bottom (meter) card opacity (%)"
+msgstr "Alsó (mérő) kártya átlátszatlansága (%)"
+
+msgctxt "#32206"
+msgid "Bottom (meter) card: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Alsó (mérő) kártya: egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32207"
+msgid "Playback modes panel colour"
+msgstr "Lejátszási módok panel színe"
+
+msgctxt "#32208"
+msgid "Playback modes panel opacity (%)"
+msgstr "Lejátszási módok panel átlátszatlansága (%)"
+
+msgctxt "#32209"
+msgid "Playback modes panel: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Lejátszási módok panel: egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32210"
+msgid "Selected row: custom colour"
+msgstr "Kijelölt sor: egyéni szín"
+
+msgctxt "#32211"
+msgid "Main text"
+msgstr "Fő szöveg (címek, értékek)"
+
+msgctxt "#32212"
+msgid "Main text: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Fő szöveg (címek, értékek): egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32213"
+msgid "Value text"
+msgstr "Mérősáv színe (alap)"
+
+msgctxt "#32214"
+msgid "Value text: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Mérősáv színe: egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32215"
+msgid "Label text"
+msgstr "Címkék"
+
+msgctxt "#32216"
+msgid "Label text: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Címkék: egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32217"
+msgid "Highlight (green)"
+msgstr "Kiemelés (zöld)"
+
+msgctxt "#32218"
+msgid "Highlight (green): custom colour (RRGGBB/AARRGGBB)"
+msgstr "Kiemelés (zöld): egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32219"
+msgid "Warning (yellow)"
+msgstr "Figyelmeztetés (sárga)"
+
+msgctxt "#32220"
+msgid "Warning (yellow): custom colour (RRGGBB/AARRGGBB)"
+msgstr "Figyelmeztetés (sárga): egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32221"
+msgid "Refresh DV data when playback starts (panel opens and closes invisibly)"
+msgstr "DV adatok frissítése lejátszás indulásakor (a panel láthatatlanul megnyílik és bezáródik)"
+
+msgctxt "#32300"
+msgid "Mobile app (TinyPPI Mobile compatible)"
+msgstr "Mobil app (TinyPPI Mobile kompatibilis)"
+
+msgctxt "#32301"
+msgid "Enable web server for the mobile app (read-only)"
+msgstr "Webszerver a mobil apphoz (csak olvasás)"
+
+msgctxt "#32302"
+msgid "Web server port"
+msgstr "Webszerver portja"
+
+msgctxt "#32303"
+msgid "Access token (8 characters; enter it in the app)"
+msgstr "Hozzáférési token (8 karakter, ezt add meg az appban)"
+
+msgctxt "#32304"
+msgid "Allow control and media library in the app"
+msgstr "Vezérlés és médiatár engedélyezése az appban"
+
+msgctxt "#32305"
+msgid "MDBList API key (more rating sources in the app)"
+msgstr "MDBList API-kulcs (több értékelés az appban)"
+
+msgctxt "#32231"
+msgid "Column titles"
+msgstr "Oszlopcímek (Bemenet / Feldolgozás / Kimenet)"
+
+msgctxt "#32241"
+msgid "Column titles: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Oszlopcímek (Bemenet / Feldolgozás / Kimenet): egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32232"
+msgid "Column header, line 1"
+msgstr "Oszlopfejléc 1. sor"
+
+msgctxt "#32242"
+msgid "Column header, line 1: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Oszlopfejléc 1. sor: egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32233"
+msgid "Column header, line 2"
+msgstr "Oszlopfejléc 2. sor"
+
+msgctxt "#32243"
+msgid "Column header, line 2: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Oszlopfejléc 2. sor: egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32234"
+msgid "Section titles"
+msgstr "Szakaszcímek (VIDEÓ, HANG...)"
+
+msgctxt "#32244"
+msgid "Section titles: custom colour (RRGGBB/AARRGGBB)"
+msgstr "Szakaszcímek (VIDEÓ, HANG...): egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32235"
+msgid "Values (right column)"
+msgstr "Értékek (jobb oldali oszlop)"
+
+msgctxt "#32245"
+msgid "Values (right column): custom colour (RRGGBB/AARRGGBB)"
+msgstr "Értékek (jobb oldali oszlop): egyéni szín (RRGGBB/AARRGGBB)"
+
+msgctxt "#32310"
+msgid "Language of the panel and the app labels"
+msgstr "A panel és az app feliratainak nyelve"
+
+msgctxt "#32311"
+msgid "Automatic (Kodi language)"
+msgstr "Automatikus (Kodi nyelve)"
+
+msgctxt "#32312"
+msgid "English"
+msgstr "Angol"
+
+msgctxt "#32313"
+msgid "Hungarian"
+msgstr "Magyar"

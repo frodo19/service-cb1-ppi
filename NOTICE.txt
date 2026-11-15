@@ -1,0 +1,34 @@
+service.cb1.ppi - NOTICE / third-party and derived material
+
+1. Add-on code (*.py, settings, language files, README)
+   Written for this project. Licence: GPL-2.0-or-later (see LICENSE).
+
+2. Panel template (template/cb1/*.xml)
+   NOT included in this repository. The add-on is designed to work with the
+   cb1 Player information panel of the CroqueMr/libreelec-x86-DV LibreELEC
+   build (https://github.com/CroqueMr/libreelec-x86-DV). Without template/cb1
+   the add-on generates nothing and changes nothing.
+
+3. media/cb1-*.png
+   Plain geometric textures (rectangles, rounded shapes, a check mark) drawn
+   for this add-on; no third-party artwork is included.
+
+4. icon.png, fanart.jpg
+   Original artwork made for this add-on. Not derived from the artwork of
+   any other project.
+
+5. Mobile-app web server (web.py, media.py)
+   Independent implementation of the published HTTP/JSON interface of the
+   TinyPPI Mobile app (https://github.com/CE-Repo/tinyppi-mobile, MIT).
+   No code, name, icon or artwork of the TinyPPI add-on (AGPL-3.0-or-later
+   code; name and artwork under a separate licence) is included or used.
+   "TinyPPI" is named only to identify the compatible app.
+
+6. MDBList
+   Optional ratings lookup through the user's own MDBList API key.
+   No key is bundled; MDBList's own terms of service apply.
+
+Trademarks: Dolby, Dolby Vision (Dolby Laboratories), HDR10+, DTS and other
+format names, Kodi, LibreELEC and TinyPPI belong to their respective owners
+and are used only to describe features or compatibility. No affiliation or
+endorsement is claimed.

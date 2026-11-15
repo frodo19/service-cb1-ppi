@@ -1,0 +1,294 @@
+# Kodi Media Center language file
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en_GB\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#32001"
+msgid "Backgrounds"
+msgstr ""
+
+msgctxt "#32002"
+msgid "Text colours"
+msgstr ""
+
+msgctxt "#32003"
+msgid "Advanced"
+msgstr ""
+
+msgctxt "#32016"
+msgid "Selected row colour (playback modes)"
+msgstr ""
+
+msgctxt "#32030"
+msgid " colour"
+msgstr ""
+
+msgctxt "#32031"
+msgid " opacity (%)"
+msgstr ""
+
+msgctxt "#32040"
+msgid "Custom colour (RRGGBB or AARRGGBB), empty = use list"
+msgstr ""
+
+msgctxt "#32041"
+msgid "Reload skin after changing settings"
+msgstr ""
+
+msgctxt "#32042"
+msgid "Regenerate panel now (after editing template/)"
+msgstr ""
+
+msgctxt "#32043"
+msgid "Default"
+msgstr ""
+
+msgctxt "#32100"
+msgid "White"
+msgstr ""
+
+msgctxt "#32101"
+msgid "Light grey"
+msgstr ""
+
+msgctxt "#32102"
+msgid "Grey"
+msgstr ""
+
+msgctxt "#32103"
+msgid "Dark grey"
+msgstr ""
+
+msgctxt "#32104"
+msgid "Black"
+msgstr ""
+
+msgctxt "#32105"
+msgid "Dark slate"
+msgstr ""
+
+msgctxt "#32106"
+msgid "Slate"
+msgstr ""
+
+msgctxt "#32107"
+msgid "Slate dark"
+msgstr ""
+
+msgctxt "#32108"
+msgid "Graphite"
+msgstr ""
+
+msgctxt "#32109"
+msgid "Navy"
+msgstr ""
+
+msgctxt "#32110"
+msgid "Dark green"
+msgstr ""
+
+msgctxt "#32111"
+msgid "Burgundy"
+msgstr ""
+
+msgctxt "#32112"
+msgid "Dark purple"
+msgstr ""
+
+msgctxt "#32113"
+msgid "Green"
+msgstr ""
+
+msgctxt "#32114"
+msgid "Amber"
+msgstr ""
+
+msgctxt "#32115"
+msgid "Orange"
+msgstr ""
+
+msgctxt "#32116"
+msgid "Sky blue"
+msgstr ""
+
+msgctxt "#32117"
+msgid "Cyan"
+msgstr ""
+
+msgctxt "#32118"
+msgid "Red"
+msgstr ""
+
+msgctxt "#32119"
+msgid "Magenta"
+msgstr ""
+
+msgctxt "#32120"
+msgid "Lilac"
+msgstr ""
+
+msgctxt "#32201"
+msgid "Main panel colour"
+msgstr ""
+
+msgctxt "#32202"
+msgid "Main panel opacity (%)"
+msgstr ""
+
+msgctxt "#32203"
+msgid "Main panel: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32204"
+msgid "Bottom (meter) card colour"
+msgstr ""
+
+msgctxt "#32205"
+msgid "Bottom (meter) card opacity (%)"
+msgstr ""
+
+msgctxt "#32206"
+msgid "Bottom (meter) card: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32207"
+msgid "Playback modes panel colour"
+msgstr ""
+
+msgctxt "#32208"
+msgid "Playback modes panel opacity (%)"
+msgstr ""
+
+msgctxt "#32209"
+msgid "Playback modes panel: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32210"
+msgid "Selected row: custom colour"
+msgstr ""
+
+msgctxt "#32211"
+msgid "Main text"
+msgstr ""
+
+msgctxt "#32212"
+msgid "Main text: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32213"
+msgid "Value text"
+msgstr ""
+
+msgctxt "#32214"
+msgid "Value text: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32215"
+msgid "Label text"
+msgstr ""
+
+msgctxt "#32216"
+msgid "Label text: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32217"
+msgid "Highlight (green)"
+msgstr ""
+
+msgctxt "#32218"
+msgid "Highlight (green): custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32219"
+msgid "Warning (yellow)"
+msgstr ""
+
+msgctxt "#32220"
+msgid "Warning (yellow): custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32221"
+msgid "Refresh DV data when playback starts (panel opens and closes invisibly)"
+msgstr ""
+
+msgctxt "#32300"
+msgid "Mobile app (TinyPPI Mobile compatible)"
+msgstr ""
+
+msgctxt "#32301"
+msgid "Enable web server for the mobile app (read-only)"
+msgstr ""
+
+msgctxt "#32302"
+msgid "Web server port"
+msgstr ""
+
+msgctxt "#32303"
+msgid "Access token (8 characters; enter it in the app)"
+msgstr ""
+
+msgctxt "#32304"
+msgid "Allow control and media library in the app"
+msgstr ""
+
+msgctxt "#32305"
+msgid "MDBList API key (more rating sources in the app)"
+msgstr ""
+
+msgctxt "#32231"
+msgid "Column titles"
+msgstr ""
+
+msgctxt "#32241"
+msgid "Column titles: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32232"
+msgid "Column header, line 1"
+msgstr ""
+
+msgctxt "#32242"
+msgid "Column header, line 1: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32233"
+msgid "Column header, line 2"
+msgstr ""
+
+msgctxt "#32243"
+msgid "Column header, line 2: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32234"
+msgid "Section titles"
+msgstr ""
+
+msgctxt "#32244"
+msgid "Section titles: custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32235"
+msgid "Values (right column)"
+msgstr ""
+
+msgctxt "#32245"
+msgid "Values (right column): custom colour (RRGGBB/AARRGGBB)"
+msgstr ""
+
+msgctxt "#32310"
+msgid "Language of the panel and the app labels"
+msgstr ""
+
+msgctxt "#32311"
+msgid "Automatic (Kodi language)"
+msgstr ""
+
+msgctxt "#32312"
+msgid "English"
+msgstr ""
+
+msgctxt "#32313"
+msgid "Hungarian"
+msgstr ""
