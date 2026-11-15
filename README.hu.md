@@ -32,7 +32,8 @@ A fork a `playerprocessinfo` ablakra tölti a `DV.*` property-ket:
 
     $INFO[Window(playerprocessinfo).Property(DV.L1PQ)]
 
-Property-k (86):
+<details>
+<summary>A DV.* property-k listája (86)</summary>
 
 - `DV.AIL1`
 - `DV.AIL3`
@@ -120,6 +121,7 @@ Property-k (86):
 - `DV.UsedL3`
 - `DV.UsedL6Max`
 - `DV.Version`
+</details>
 
 ## Mobil app (TinyPPI Mobile kompatibilis)
 A beállítások → **Mobil app** alatt bekapcsolható egy webszerver (alapból ki), amely a TinyPPI Mobile

@@ -32,7 +32,8 @@ The fork fills these properties on the `playerprocessinfo` window:
 
     $INFO[Window(playerprocessinfo).Property(DV.L1PQ)]
 
-Properties (86):
+<details>
+<summary>Show the list of DV.* properties (86)</summary>
 
 - `DV.AIL1`
 - `DV.AIL3`
@@ -120,6 +121,7 @@ Properties (86):
 - `DV.UsedL3`
 - `DV.UsedL6Max`
 - `DV.Version`
+</details>
 
 ## Mobile app (TinyPPI Mobile compatible)
 Settings → **Mobile app** enables a web server (off by default) that implements the published
