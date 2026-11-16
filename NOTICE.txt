@@ -10,7 +10,7 @@ service.cb1.ppi - NOTICE / third-party and derived material
    DialogPlayerProcessInfo.xml, IncludesDVProcessInfo.xml and
    DialogPlaybackModes.xml.
    The original authorship remains with the author of that project. The
-   author confirmed on the AVS Forum on 2026-11-15 that the
+   author (forum user CSBY) confirmed on the AVS Forum on 2026-11-15 that the
    modified copies may be published under GPL-2.0-or-later. The panel reads
    the DV.* window properties that the fork provides.
 

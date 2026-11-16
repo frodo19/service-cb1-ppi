@@ -138,7 +138,7 @@ msgid "Main panel opacity (%)"
 msgstr ""
 
 msgctxt "#32203"
-msgid "Main panel: custom colour (RRGGBB/AARRGGBB)"
+msgid "Main panel – custom colour"
 msgstr ""
 
 msgctxt "#32204"
@@ -150,7 +150,7 @@ msgid "Bottom (meter) card opacity (%)"
 msgstr ""
 
 msgctxt "#32206"
-msgid "Bottom (meter) card: custom colour (RRGGBB/AARRGGBB)"
+msgid "Bottom card – custom colour"
 msgstr ""
 
 msgctxt "#32207"
@@ -162,11 +162,11 @@ msgid "Playback modes panel opacity (%)"
 msgstr ""
 
 msgctxt "#32209"
-msgid "Playback modes panel: custom colour (RRGGBB/AARRGGBB)"
+msgid "Playback modes panel – custom colour"
 msgstr ""
 
 msgctxt "#32210"
-msgid "Selected row: custom colour"
+msgid "Selected row – custom colour"
 msgstr ""
 
 msgctxt "#32211"
@@ -174,7 +174,7 @@ msgid "Main text"
 msgstr ""
 
 msgctxt "#32212"
-msgid "Main text: custom colour (RRGGBB/AARRGGBB)"
+msgid "Main text – custom colour"
 msgstr ""
 
 msgctxt "#32213"
@@ -182,7 +182,7 @@ msgid "Value text"
 msgstr ""
 
 msgctxt "#32214"
-msgid "Value text: custom colour (RRGGBB/AARRGGBB)"
+msgid "Value text – custom colour"
 msgstr ""
 
 msgctxt "#32215"
@@ -190,7 +190,7 @@ msgid "Label text"
 msgstr ""
 
 msgctxt "#32216"
-msgid "Label text: custom colour (RRGGBB/AARRGGBB)"
+msgid "Label text – custom colour"
 msgstr ""
 
 msgctxt "#32217"
@@ -198,7 +198,7 @@ msgid "Highlight (green)"
 msgstr ""
 
 msgctxt "#32218"
-msgid "Highlight (green): custom colour (RRGGBB/AARRGGBB)"
+msgid "Highlight – custom colour"
 msgstr ""
 
 msgctxt "#32219"
@@ -206,7 +206,7 @@ msgid "Warning (yellow)"
 msgstr ""
 
 msgctxt "#32220"
-msgid "Warning (yellow): custom colour (RRGGBB/AARRGGBB)"
+msgid "Warning – custom colour"
 msgstr ""
 
 msgctxt "#32221"
@@ -242,7 +242,7 @@ msgid "Column titles"
 msgstr ""
 
 msgctxt "#32241"
-msgid "Column titles: custom colour (RRGGBB/AARRGGBB)"
+msgid "Column titles – custom colour"
 msgstr ""
 
 msgctxt "#32232"
@@ -250,7 +250,7 @@ msgid "Column header, line 1"
 msgstr ""
 
 msgctxt "#32242"
-msgid "Column header, line 1: custom colour (RRGGBB/AARRGGBB)"
+msgid "Column header 1 – custom colour"
 msgstr ""
 
 msgctxt "#32233"
@@ -258,7 +258,7 @@ msgid "Column header, line 2"
 msgstr ""
 
 msgctxt "#32243"
-msgid "Column header, line 2: custom colour (RRGGBB/AARRGGBB)"
+msgid "Column header 2 – custom colour"
 msgstr ""
 
 msgctxt "#32234"
@@ -266,7 +266,7 @@ msgid "Section titles"
 msgstr ""
 
 msgctxt "#32244"
-msgid "Section titles: custom colour (RRGGBB/AARRGGBB)"
+msgid "Section titles – custom colour"
 msgstr ""
 
 msgctxt "#32235"
@@ -274,11 +274,11 @@ msgid "Values (right column)"
 msgstr ""
 
 msgctxt "#32245"
-msgid "Values (right column): custom colour (RRGGBB/AARRGGBB)"
+msgid "Values – custom colour"
 msgstr ""
 
 msgctxt "#32310"
-msgid "Language of the panel and the app labels"
+msgid "Panel language"
 msgstr ""
 
 msgctxt "#32311"
@@ -291,4 +291,8 @@ msgstr ""
 
 msgctxt "#32313"
 msgid "Hungarian"
+msgstr ""
+
+msgctxt "#32050"
+msgid "Custom colour, e.g. FFCC00 (RRGGBB) or 80FFCC00 (AARRGGBB). Leave empty to use the colour chosen in the list."
 msgstr ""
