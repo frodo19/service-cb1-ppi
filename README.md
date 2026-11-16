@@ -46,6 +46,11 @@ The fork fills these properties on the `playerprocessinfo` window:
 - `DV.Committed`
 - `DV.CreativeTrims`
 - `DV.DecodedHLG`
+- `DV.HdmiFormat`
+- `DV.LldvRed`
+- `DV.LldvGreen`
+- `DV.LldvBlue`
+- `DV.VideoUpscaler`
 - `DV.Display`
 - `DV.DisplayBlack`
 - `DV.DroppedSkipped`

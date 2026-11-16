@@ -2,6 +2,12 @@
 
 # Panel template (template/cb1/*.xml is written in Hungarian)
 PANEL = {
+    'Jel': 'Signal',
+    'HDMI formátum': 'HDMI format',
+    'Vörös xy': 'Red xy',
+    'Zöld xy': 'Green xy',
+    'Kék xy': 'Blue xy',
+    'Kodi : Alapértelmezett': 'Kodi : Default',
     'A fájlban eredeti': 'As authored in file',
     'AI előtt min/max/átl': 'Pre-AI min/max/avg',
     'AI-modell': 'AI model',
