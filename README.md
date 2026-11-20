@@ -124,6 +124,43 @@ The fork fills these properties on the `playerprocessinfo` window:
 - `DV.Version`
 </details>
 
+## CPU line for skins
+The service publishes the per-core CPU load as ready-to-use **Window(Home) properties**, refreshed once a
+second while the add-on runs. Kodi's own `System.CpuUsage` is one long text (`CPU #0: 2.0% #1: 2.0% ...`)
+that is cut off on many screens; these properties are short and formatted:
+
+| Property | Example | Use |
+|---|---|---|
+| `Window(Home).Property(cb1.cores)` | `\| 05 \| 00 \| 03 \| 11 \|` | per-core load, wide screens |
+| `Window(Home).Property(cb1.coresc)` | `05\|00\|03\|11` | the same, compact, for narrow places |
+| `Window(Home).Property(cb1.cpu)` | `14%` | average over all cores ("sum") |
+
+Each core is two digits without a percent sign (100 % is shown as `99`). Busy cores are white, idle cores
+(`00`) grey; the separator of the compact line is 50 % transparent. A core that Kodi reports as `nan%`
+keeps its last value. The colours are the `CPU_*_COLOUR` constants at the top of `service.py`
+(`AARRGGBB`, Kodi `[COLOR]` tags).
+
+![CPU line in a skin's system page](docs/cpu-system-page.png)
+![CPU line in a narrow side panel](docs/cpu-side-panel.png)
+
+*(Screenshots: a custom skin, cropped.)*
+
+### Using the values in a skin
+Use them like any infolabel. The sum first, then the cores (a label of a skin XML):
+
+    <label fallback="19055">$INFO[Window(Home).Property(cb1.cpu),CPU: ,]$INFO[Window(Home).Property(cb1.cores), ,]</label>
+
+gives `CPU: 14% | 05 | 00 | 03 | 11 | ...`. For a narrow panel use the compact property:
+
+    <label fallback="19055">$INFO[Window(Home).Property(cb1.cpu),CPU: ,]$INFO[Window(Home).Property(cb1.coresc), ,]</label>
+
+Notes:
+- In `$INFO[label,prefix,suffix]` the text between the commas is the prefix (`CPU: `).
+- `fallback="19055"` shows Kodi's "No information available" when the property is empty (add-on not running).
+- If the line is still cut off, let the label control reach past the progress bar: add `<right>-30</right>` to the `<control type="label">`. A 100 % average and 13 cores fit this way.
+- Keep your progress bar on `<info>System.CPUUsage</info>`; that one needs a number.
+- The properties only exist while this add-on runs. A skin using them without the add-on shows the fallback text.
+
 ## Mobile app (TinyPPI Mobile compatible)
 Settings → **Mobile app** enables a web server (off by default) that implements the published
 HTTP/JSON interface of the TinyPPI Mobile app ([CE-Repo/tinyppi-mobile](https://github.com/CE-Repo/tinyppi-mobile), MIT).
