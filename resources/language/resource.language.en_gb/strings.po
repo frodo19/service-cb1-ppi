@@ -134,7 +134,7 @@ msgid "Main panel colour"
 msgstr ""
 
 msgctxt "#32202"
-msgid "Main panel opacity (%)"
+msgid "Main panel opacity"
 msgstr ""
 
 msgctxt "#32203"
@@ -146,7 +146,7 @@ msgid "Bottom (meter) card colour"
 msgstr ""
 
 msgctxt "#32205"
-msgid "Bottom (meter) card opacity (%)"
+msgid "Bottom (meter) card opacity"
 msgstr ""
 
 msgctxt "#32206"
@@ -158,7 +158,7 @@ msgid "Playback modes panel colour"
 msgstr ""
 
 msgctxt "#32208"
-msgid "Playback modes panel opacity (%)"
+msgid "Playback modes opacity"
 msgstr ""
 
 msgctxt "#32209"
@@ -295,4 +295,136 @@ msgstr ""
 
 msgctxt "#32050"
 msgid "Custom colour, e.g. FFCC00 (RRGGBB) or 80FFCC00 (AARRGGBB). Leave empty to use the colour chosen in the list."
+msgstr ""
+
+msgctxt "#32500"
+msgid "[COLOR FF101518]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32501"
+msgid "[COLOR FF12A0C7]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32502"
+msgid "[COLOR FF1A2123]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32503"
+msgid "[COLOR FF1C2327]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32504"
+msgid "[COLOR FF65E18D]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32505"
+msgid "[COLOR FF7D8A90]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32506"
+msgid "[COLOR FF8C989E]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32507"
+msgid "[COLOR FFA3AFB4]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32508"
+msgid "[COLOR FFC6CED2]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32509"
+msgid "[COLOR FFEEF2F3]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32510"
+msgid "[COLOR FFF2C46D]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32511"
+msgid "[COLOR FFF2F5F6]●[/COLOR] Default"
+msgstr ""
+
+msgctxt "#32512"
+msgid "[COLOR FFFFFFFF]●[/COLOR] White"
+msgstr ""
+
+msgctxt "#32513"
+msgid "[COLOR FFEEF2F3]●[/COLOR] Light grey"
+msgstr ""
+
+msgctxt "#32514"
+msgid "[COLOR FFC6CED2]●[/COLOR] Grey"
+msgstr ""
+
+msgctxt "#32515"
+msgid "[COLOR FF7D8A90]●[/COLOR] Dark grey"
+msgstr ""
+
+msgctxt "#32516"
+msgid "[COLOR FF000000]●[/COLOR] Black"
+msgstr ""
+
+msgctxt "#32517"
+msgid "[COLOR FF101518]●[/COLOR] Dark slate"
+msgstr ""
+
+msgctxt "#32518"
+msgid "[COLOR FF1C2327]●[/COLOR] Slate"
+msgstr ""
+
+msgctxt "#32519"
+msgid "[COLOR FF1A2123]●[/COLOR] Slate dark"
+msgstr ""
+
+msgctxt "#32520"
+msgid "[COLOR FF2E3539]●[/COLOR] Graphite"
+msgstr ""
+
+msgctxt "#32521"
+msgid "[COLOR FF0B1626]●[/COLOR] Navy"
+msgstr ""
+
+msgctxt "#32522"
+msgid "[COLOR FF0E1F16]●[/COLOR] Dark green"
+msgstr ""
+
+msgctxt "#32523"
+msgid "[COLOR FF2A0F14]●[/COLOR] Burgundy"
+msgstr ""
+
+msgctxt "#32524"
+msgid "[COLOR FF1E1230]●[/COLOR] Dark purple"
+msgstr ""
+
+msgctxt "#32525"
+msgid "[COLOR FF65E18D]●[/COLOR] Green"
+msgstr ""
+
+msgctxt "#32526"
+msgid "[COLOR FFF2C46D]●[/COLOR] Amber"
+msgstr ""
+
+msgctxt "#32527"
+msgid "[COLOR FFFF9F43]●[/COLOR] Orange"
+msgstr ""
+
+msgctxt "#32528"
+msgid "[COLOR FF4FC3F7]●[/COLOR] Sky blue"
+msgstr ""
+
+msgctxt "#32529"
+msgid "[COLOR FF12A0C7]●[/COLOR] Cyan"
+msgstr ""
+
+msgctxt "#32530"
+msgid "[COLOR FFFF6B6B]●[/COLOR] Red"
+msgstr ""
+
+msgctxt "#32531"
+msgid "[COLOR FFE040FB]●[/COLOR] Magenta"
+msgstr ""
+
+msgctxt "#32532"
+msgid "[COLOR FFB39DDB]●[/COLOR] Lilac"
 msgstr ""

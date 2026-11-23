@@ -19,6 +19,7 @@ optional read-mostly web server for a compatible mobile app. English and Hungari
 
 ## Settings
 - **Backgrounds:** main panel, bottom (meter) card, playback modes panel: colour + opacity; selected row colour.
+- Every colour list shows a dot in the option's own colour, so you can see the result before choosing.
 - **Text colours:** main, values, labels, accent (green), warning (yellow), plus separate colours for column titles, column headers, section titles and values.
 - **Advanced:** language (Automatic / English / Magyar), custom hex colours (RRGGBB or AARRGGBB), skin reload, regenerate, DV data refresh at playback start.
 - **Mobile app:** optional web server (off by default), port, access token, control/library switch, optional MDBList API key.

@@ -257,8 +257,6 @@
       <include content="DVInfoRow"><param name="label" value="Rétegek"/><param name="value" value="$VAR[DVLayers]"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.RPU)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.RPU),N/A)"/></include>
       <include content="DVSection"><param name="label" value="Fájl metaadatai"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.ParsedBlocks))"/></include>
       <include content="DVBlockChips"><param name="list" value="DV.ParsedBlocks"/></include>
-      <include content="DVInfoRow"><param name="label" value="L6 max / min"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.Mastering)]"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.UsedL6Max))"/></include>
-      <include content="DVInfoRow"><param name="label" value="L6 MaxCLL / MaxFALL"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.CLL)]"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.UsedL6Max))"/></include>
     </definition></include>
   <!-- Processing: what CB1 does with it. -->
   <include name="DVRenderingFields"><definition>
@@ -290,8 +288,9 @@
       <include content="DVInfoRow"><param name="label" value="Masterelés max / min"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.SourceMastering)]"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.SourceMastering)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.SourceMastering),N/A)"/></include>
       <include content="DVInfoRow"><param name="label" value="MaxCLL / MaxFALL"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.SourceLight)]"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.SourceLight)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.SourceLight),N/A)"/></include>
     </definition></include>
+  <expression name="DVHasAppliedSourceMetadata">[[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L1 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L1)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L1PQ)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L1PQ),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L1 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L1)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L1Nits)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L1Nits),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L3 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L3)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L3))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L4 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L4)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L4))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L5 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L5)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L5)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L5),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L6 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L6)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.Mastering)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.Mastering),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L6 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L6)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.CLL)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.CLL),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L9 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L9)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L9))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L10 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L10)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L10))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L11 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L11)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L11))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L254 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L254)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L254))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L255 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L255)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L255))]] | !String.IsEmpty(Window(playerprocessinfo).Property(DV.UsedL6Max))</expression>
+  <expression name="DVHasStaticSourceMetadata">[!String.IsEmpty(Window(playerprocessinfo).Property(DV.SourceMastering)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.SourceMastering),N/A)] | [!String.IsEmpty(Window(playerprocessinfo).Property(DV.SourceLight)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.SourceLight),N/A)]</expression>
   <include name="DVSourceMetadataFields"><definition>
-      <include content="DVSection"><param name="label" value="Forrás metaadat"/><param name="visible" value="[[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L1 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L1)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L1PQ)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L1PQ),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L1 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L1)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L1Nits)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L1Nits),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L3 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L3)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L3))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L4 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L4)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L4))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L5 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L5)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L5)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L5),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L6 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L6)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.Mastering)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.Mastering),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L6 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L6)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.CLL)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.CLL),N/A)]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L9 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L9)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L9))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L10 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L10)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L10))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L11 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L11)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L11))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L254 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L254)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L254))]] | [[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L255 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L255)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L255))]]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="$VAR[DVAppliedL1PQLabel]"/><param name="value" value="$VAR[DVAppliedL1PQ]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L1 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L1)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L1PQ)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L1PQ),N/A)]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="$VAR[DVAppliedL1NitsLabel]"/><param name="value" value="$VAR[DVAppliedL1Nits]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L1 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L1)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L1Nits)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L1Nits),N/A)]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="$VAR[DVAppliedL3Label]"/><param name="value" value="$VAR[DVAppliedL3]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L3 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L3)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L3))]"/></include>
@@ -299,15 +298,13 @@
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L5 B/J/F/A"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.L5)]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L5 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L5)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L5)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.L5),N/A)]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="$VAR[DVAppliedL6Label]"/><param name="value" value="$VAR[DVAppliedL6]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L6 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L6)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.Mastering)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.Mastering),N/A)]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L6 CLL / FALL"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.CLL)]"/><param name="visible" value="String.IsEmpty(Window(playerprocessinfo).Property(DV.UsedL6Max)) + [String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L6 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L6)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.CLL)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.CLL),N/A)]"/></include>
+      <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L6 max / min"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.Mastering)]"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.UsedL6Max))"/></include>
+      <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L6 MaxCLL / MaxFALL"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.CLL)]"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.UsedL6Max))"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L9 forrás alapszínei"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.L9)]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L9 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L9)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L9))]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L10 célkijelzők"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.L10)]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L10 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L10)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L10))]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L11 tartalomtípus"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.L11)]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L11 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L11)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L11))]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L254 DM mód / verzió"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.L254)]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L254 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L254)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L254))]"/></include>
       <include content="DVInfoRow"><param name="labelcolor" value="@@c_FFEEF2F3@@"/><param name="label" value="L255 futtatási mód / verzió"/><param name="value" value="$INFO[Window(playerprocessinfo).Property(DV.L255)]"/><param name="visible" value="[String.Contains(Window(playerprocessinfo).Property(DV.AppliedBlocks),&quot;L255 &quot;) | String.EndsWith(Window(playerprocessinfo).Property(DV.AppliedBlocks),L255)] + [!String.IsEmpty(Window(playerprocessinfo).Property(DV.L255))]"/></include>
-    </definition></include>
-  <include name="DVStaticMetadataFields"><definition>
-      <include content="DVSection"><param name="label" value="Forrás metaadat"/><param name="visible" value="[!String.IsEmpty(Window(playerprocessinfo).Property(DV.SourceMastering)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.SourceMastering),N/A)] | [!String.IsEmpty(Window(playerprocessinfo).Property(DV.SourceLight)) + !String.IsEqual(Window(playerprocessinfo).Property(DV.SourceLight),N/A)]"/></include>
-      <include>DVStaticHDRFields</include>
     </definition></include>
   <include name="DVHDR10PlusFields"><definition>
       <include content="DVSection"><param name="label" value="$INFO[Window(playerprocessinfo).Property(DV.HDR10PlusSection)]"/><param name="visible" value="!String.IsEmpty(Window(playerprocessinfo).Property(DV.HDR10PlusTarget))"/></include>
@@ -386,14 +383,15 @@
           <include>DVColumnSpacer</include>
           <include>DVInputFields</include>
           <include condition="$PARAM[dv]">DVInputDolbyVisionFields</include>
-          <include condition="![$PARAM[dv]] | String.IsEmpty(Window(playerprocessinfo).Property(DV.Transport))">DVStaticMetadataFields</include>
-          <include condition="![$PARAM[dv]]">DVHDR10PlusFields</include>
           <include>DVColumnEnd</include>
         </control>
         <control type="grouplist" id="$PARAM[col2]"><left>654</left><top>108</top><width>548</width><height>1500</height><itemgap>0</itemgap><usecontrolcoords>true</usecontrolcoords>
           <include>DVColumnSpacer</include>
           <include>DVRenderingFields</include>
+          <include content="DVSection"><param name="label" value="Forrás metaadat"/><param name="visible" value="[$PARAM[dv] + $EXP[DVHasAppliedSourceMetadata]] | [[![$PARAM[dv]] | String.IsEmpty(Window(playerprocessinfo).Property(DV.Transport))] + $EXP[DVHasStaticSourceMetadata]]"/></include>
           <include condition="$PARAM[dv]">DVSourceMetadataFields</include>
+          <include condition="![$PARAM[dv]] | String.IsEmpty(Window(playerprocessinfo).Property(DV.Transport))">DVStaticHDRFields</include>
+          <include condition="![$PARAM[dv]]">DVHDR10PlusFields</include>
           <include>DVUsedHDRFields</include>
           <include>DVUsedHDR10PlusFields</include>
           <include>DVReconstructionFields</include>
@@ -418,9 +416,9 @@
   </include>
   <include name="CB1PlaybackModeLayout">
     <control type="group" id="9100">
-      <right>42</right><bottom>56</bottom><width>680</width><height>500</height>
+      <right>42</right><bottom>66</bottom><width>680</width><height>470</height>
       <control type="image" id="9101">
-        <width>680</width><height>500</height>
+        <width>680</width><height>470</height>
         <texture border="30" colordiffuse="@@bg_modes@@">special://xbmc/media/cb1-switch-panel.png</texture>
       </control>
       <control type="label" id="1">
@@ -457,18 +455,24 @@
         <onup>6</onup><ondown>6</ondown><onleft>6</onleft><onright>6</onright>
         <include>CB1PlaybackModeRows</include>
       </control>
-      <control type="group" id="9103">
-        <left>24</left><top>456</top><width>632</width><height>32</height>
-        <visible>!String.IsEmpty(Container(6).ListItem.Label2)</visible>
-        <control type="image"><width>632</width><height>1</height>
-          <texture colordiffuse="FF3A4448">special://xbmc/media/cb1-white.png</texture>
-        </control>
-        <control type="label" id="9102">
-          <left>32</left><top>8</top><width>586</width><height>24</height>
-          <font>CB1.SwitchHelp</font><textcolor>@@c_FFEEF2F3@@</textcolor><aligny>center</aligny>
-          <label>$INFO[Container(6).ListItem.Label2]</label>
-          <wrapmultiline>false</wrapmultiline><scroll>false</scroll>
-        </control>
+    </control>
+    <control type="group" id="9103">
+      <right>66</right><bottom>24</bottom><width>632</width><height>32</height>
+      <visible>!String.IsEmpty(Container(6).ListItem.Label2)</visible>
+      <control type="image">
+        <width>632</width><height>32</height>
+        <texture border="8" colordiffuse="@@bg_modes@@">special://xbmc/media/cb1-chip.png</texture>
+      </control>
+      <control type="label">
+        <left>9</left><width>18</width><height>32</height>
+        <font>CB1.SwitchHelp</font><textcolor>@@c_FFF2F5F6@@</textcolor><align>center</align><aligny>center</aligny>
+        <label>&#9432;</label>
+      </control>
+      <control type="label" id="9102">
+        <left>32</left><width>584</width><height>32</height>
+        <font>CB1.SwitchHelp</font><textcolor>@@c_FFF2F5F6@@</textcolor><aligny>center</aligny>
+        <label>$INFO[Container(6).ListItem.Label2]</label>
+        <wrapmultiline>false</wrapmultiline><scroll>false</scroll>
       </control>
     </control>
   </include>

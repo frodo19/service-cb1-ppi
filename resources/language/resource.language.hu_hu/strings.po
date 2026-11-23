@@ -134,8 +134,8 @@ msgid "Main panel colour"
 msgstr "Főpanel színe"
 
 msgctxt "#32202"
-msgid "Main panel opacity (%)"
-msgstr "Főpanel átlátszatlansága (%)"
+msgid "Main panel opacity"
+msgstr "Főpanel átlátszatlansága"
 
 msgctxt "#32203"
 msgid "Main panel – custom colour"
@@ -146,8 +146,8 @@ msgid "Bottom (meter) card colour"
 msgstr "Alsó (mérő) kártya színe"
 
 msgctxt "#32205"
-msgid "Bottom (meter) card opacity (%)"
-msgstr "Alsó (mérő) kártya átlátszatlansága (%)"
+msgid "Bottom (meter) card opacity"
+msgstr "Alsó (mérő) kártya átlátszatlansága"
 
 msgctxt "#32206"
 msgid "Bottom card – custom colour"
@@ -158,8 +158,8 @@ msgid "Playback modes panel colour"
 msgstr "Lejátszási módok panel színe"
 
 msgctxt "#32208"
-msgid "Playback modes panel opacity (%)"
-msgstr "Lejátszási módok panel átlátszatlansága (%)"
+msgid "Playback modes opacity"
+msgstr "Lejátszási módok átlátszatlansága"
 
 msgctxt "#32209"
 msgid "Playback modes panel – custom colour"
@@ -296,3 +296,135 @@ msgstr "Magyar"
 msgctxt "#32050"
 msgid "Custom colour, e.g. FFCC00 (RRGGBB) or 80FFCC00 (AARRGGBB). Leave empty to use the colour chosen in the list."
 msgstr "Egyéni szín, pl. FFCC00 (RRGGBB) vagy 80FFCC00 (AARRGGBB). Üresen hagyva a listából választott szín érvényes."
+
+msgctxt "#32500"
+msgid "[COLOR FF101518]●[/COLOR] Default"
+msgstr "[COLOR FF101518]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32501"
+msgid "[COLOR FF12A0C7]●[/COLOR] Default"
+msgstr "[COLOR FF12A0C7]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32502"
+msgid "[COLOR FF1A2123]●[/COLOR] Default"
+msgstr "[COLOR FF1A2123]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32503"
+msgid "[COLOR FF1C2327]●[/COLOR] Default"
+msgstr "[COLOR FF1C2327]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32504"
+msgid "[COLOR FF65E18D]●[/COLOR] Default"
+msgstr "[COLOR FF65E18D]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32505"
+msgid "[COLOR FF7D8A90]●[/COLOR] Default"
+msgstr "[COLOR FF7D8A90]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32506"
+msgid "[COLOR FF8C989E]●[/COLOR] Default"
+msgstr "[COLOR FF8C989E]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32507"
+msgid "[COLOR FFA3AFB4]●[/COLOR] Default"
+msgstr "[COLOR FFA3AFB4]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32508"
+msgid "[COLOR FFC6CED2]●[/COLOR] Default"
+msgstr "[COLOR FFC6CED2]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32509"
+msgid "[COLOR FFEEF2F3]●[/COLOR] Default"
+msgstr "[COLOR FFEEF2F3]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32510"
+msgid "[COLOR FFF2C46D]●[/COLOR] Default"
+msgstr "[COLOR FFF2C46D]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32511"
+msgid "[COLOR FFF2F5F6]●[/COLOR] Default"
+msgstr "[COLOR FFF2F5F6]●[/COLOR] Alapértelmezett"
+
+msgctxt "#32512"
+msgid "[COLOR FFFFFFFF]●[/COLOR] White"
+msgstr "[COLOR FFFFFFFF]●[/COLOR] Fehér"
+
+msgctxt "#32513"
+msgid "[COLOR FFEEF2F3]●[/COLOR] Light grey"
+msgstr "[COLOR FFEEF2F3]●[/COLOR] Világosszürke"
+
+msgctxt "#32514"
+msgid "[COLOR FFC6CED2]●[/COLOR] Grey"
+msgstr "[COLOR FFC6CED2]●[/COLOR] Szürke"
+
+msgctxt "#32515"
+msgid "[COLOR FF7D8A90]●[/COLOR] Dark grey"
+msgstr "[COLOR FF7D8A90]●[/COLOR] Sötétszürke"
+
+msgctxt "#32516"
+msgid "[COLOR FF000000]●[/COLOR] Black"
+msgstr "[COLOR FF000000]●[/COLOR] Fekete"
+
+msgctxt "#32517"
+msgid "[COLOR FF101518]●[/COLOR] Dark slate"
+msgstr "[COLOR FF101518]●[/COLOR] Sötét palaszürke"
+
+msgctxt "#32518"
+msgid "[COLOR FF1C2327]●[/COLOR] Slate"
+msgstr "[COLOR FF1C2327]●[/COLOR] Palaszürke"
+
+msgctxt "#32519"
+msgid "[COLOR FF1A2123]●[/COLOR] Slate dark"
+msgstr "[COLOR FF1A2123]●[/COLOR] Sötét palaszürke 2"
+
+msgctxt "#32520"
+msgid "[COLOR FF2E3539]●[/COLOR] Graphite"
+msgstr "[COLOR FF2E3539]●[/COLOR] Grafit"
+
+msgctxt "#32521"
+msgid "[COLOR FF0B1626]●[/COLOR] Navy"
+msgstr "[COLOR FF0B1626]●[/COLOR] Sötétkék"
+
+msgctxt "#32522"
+msgid "[COLOR FF0E1F16]●[/COLOR] Dark green"
+msgstr "[COLOR FF0E1F16]●[/COLOR] Sötétzöld"
+
+msgctxt "#32523"
+msgid "[COLOR FF2A0F14]●[/COLOR] Burgundy"
+msgstr "[COLOR FF2A0F14]●[/COLOR] Bordó"
+
+msgctxt "#32524"
+msgid "[COLOR FF1E1230]●[/COLOR] Dark purple"
+msgstr "[COLOR FF1E1230]●[/COLOR] Sötétlila"
+
+msgctxt "#32525"
+msgid "[COLOR FF65E18D]●[/COLOR] Green"
+msgstr "[COLOR FF65E18D]●[/COLOR] Zöld"
+
+msgctxt "#32526"
+msgid "[COLOR FFF2C46D]●[/COLOR] Amber"
+msgstr "[COLOR FFF2C46D]●[/COLOR] Borostyán"
+
+msgctxt "#32527"
+msgid "[COLOR FFFF9F43]●[/COLOR] Orange"
+msgstr "[COLOR FFFF9F43]●[/COLOR] Narancs"
+
+msgctxt "#32528"
+msgid "[COLOR FF4FC3F7]●[/COLOR] Sky blue"
+msgstr "[COLOR FF4FC3F7]●[/COLOR] Égkék"
+
+msgctxt "#32529"
+msgid "[COLOR FF12A0C7]●[/COLOR] Cyan"
+msgstr "[COLOR FF12A0C7]●[/COLOR] Cián"
+
+msgctxt "#32530"
+msgid "[COLOR FFFF6B6B]●[/COLOR] Red"
+msgstr "[COLOR FFFF6B6B]●[/COLOR] Piros"
+
+msgctxt "#32531"
+msgid "[COLOR FFE040FB]●[/COLOR] Magenta"
+msgstr "[COLOR FFE040FB]●[/COLOR] Magenta"
+
+msgctxt "#32532"
+msgid "[COLOR FFB39DDB]●[/COLOR] Lilac"
+msgstr "[COLOR FFB39DDB]●[/COLOR] Orgona"
