@@ -52,6 +52,8 @@
     <value condition="String.IsEqual(Player.Process(videooutputhdrtype),hdr10plus)">HDR10+</value>
     <value condition="String.IsEqual(Player.Process(videooutputhdrtype),hdr10)">HDR10</value>
     <value condition="String.IsEqual(Player.Process(videooutputhdrtype),hlg)">HLG</value>
+    <value condition="String.IsEqual(Player.Process(videooutputhdrtype),sdr) + String.IsEqual(Window(playerprocessinfo).Property(DV.SDROutputGamut),BT.709)">SDR BT.709</value>
+    <value condition="String.IsEqual(Player.Process(videooutputhdrtype),sdr) + String.IsEqual(Window(playerprocessinfo).Property(DV.SDROutputGamut),BT.2020)">SDR BT.2020</value>
     <value condition="String.IsEqual(Player.Process(videooutputhdrtype),sdr)">SDR</value>
     <value>Kodi kimenet</value>
   </variable>
