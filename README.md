@@ -9,6 +9,10 @@ optional read-mostly web server for a compatible mobile app. English and Hungari
 > "TinyPPI Mobile" is named only to say which app the web server is compatible with.
 > Dolby, Dolby Vision and other format names are trademarks of their owners.
 
+![The panel: Dolby Vision profile 7 FEL source shown as Input / Processing / Output](docs/panel-dolby-vision-fel.jpg)
+
+![The panel: SDR source rendered to Dolby Vision with generated DV metadata](docs/panel-sdr-to-dolby-vision.png)
+
 ## What it does
 - `template/cb1/*.xml` is the **editable source** (colours are `@@token@@` placeholders; labels are written in Hungarian and translated to English at build time, see `strings_en.py`).
 - On start, and on every settings change, the service generates `media/cb1/*.xml` from the template.

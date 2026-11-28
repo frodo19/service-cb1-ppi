@@ -47,7 +47,7 @@
   <!-- The output type the display accepted, as Kodi's native telemetry reports it. -->
   <variable name="DVOutputFormat">
     <value condition="String.IsEqual(Player.Process(videooutputhdrtype),dolbyvision) + String.StartsWith(Window(playerprocessinfo).Property(DV.SignalIntent),TV-Led)">Dolby Vision · TV-Led</value>
-    <value condition="String.IsEqual(Player.Process(videooutputhdrtype),dolbyvision) + String.StartsWith(Window(playerprocessinfo).Property(DV.SignalIntent),LLDV)">Dolby Vision · Player-Led</value>
+    <value condition="String.IsEqual(Player.Process(videooutputhdrtype),dolbyvision) + String.StartsWith(Window(playerprocessinfo).Property(DV.SignalIntent),LLDV)">$LOCALIZE[41344]</value>
     <value condition="String.IsEqual(Player.Process(videooutputhdrtype),dolbyvision)">Dolby Vision</value>
     <value condition="String.IsEqual(Player.Process(videooutputhdrtype),hdr10plus)">HDR10+</value>
     <value condition="String.IsEqual(Player.Process(videooutputhdrtype),hdr10)">HDR10</value>
